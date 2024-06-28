@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
   board.drawCells();
 
   const goblin = new Goblin();
-  goblin.moveToAnotherCell(board);
+  goblin.moveToAnotherCell(board.cells);
 
   setInterval(() => {
-    goblin.moveToAnotherCell(board);
+    goblin.moveToAnotherCell(board.cells);
   }, 1000);
 });

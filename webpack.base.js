@@ -13,14 +13,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: [
-              ["@babel/preset-env", { corejs: 3, useBuiltIns: "usage" }],
-            ],
-          },
-        },
+        use: { loader: "babel-loader" },
       },
       { test: /\.html$/, loader: "html-loader" },
       { test: /\.css$/, use: [MiniCssExtractPlugin.loader, "css-loader"] },
