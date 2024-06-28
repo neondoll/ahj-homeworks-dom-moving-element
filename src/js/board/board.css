@@ -1,0 +1,20 @@
+.board {
+    --board-gap: 2px;
+    --board-padding: 16px;
+    --board-size: 1;
+    display: grid;
+    grid-template-columns: repeat(var(--board-size, 1), 1fr);
+    grid-template-rows: repeat(var(--board-size, 1), 1fr);
+    gap: var(--board-gap, 0);
+    padding: var(--board-padding, 0);
+}
+
+.board__cell {
+    --board-cell-size: calc((min(100vw, 100vh) - var(--board-gap, 0) * (var(--board-size, 1) - 1) - var(--board-padding, 0) * 2) / var(--board-size, 1));
+    box-sizing: border-box;
+    width: var(--board-cell-size, 64px);
+    height: var(--board-cell-size, 64px);
+    padding: 8px;
+    background-color: #151515;
+    border-radius: 50%;
+}
