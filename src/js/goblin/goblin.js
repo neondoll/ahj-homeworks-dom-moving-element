@@ -3,7 +3,7 @@ export class Goblin {
     this._element = document.createElement("img");
     this._element.classList.add("goblin");
     this._element.src =
-      "https://github.com/neondoll/ahj-homeworks-dom-moving-element/blob/main/src/img/goblin.png";
+      "https://github.com/neondoll/ahj-homeworks-dom-moving-element/blob/main/src/img/goblin.png?raw=true";
   }
 
   moveToAnotherCell(cells) {
