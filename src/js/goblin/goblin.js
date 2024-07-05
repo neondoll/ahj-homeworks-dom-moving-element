@@ -1,9 +1,9 @@
-import image from '../../img/goblin.png';
+import image from "../../img/goblin.png";
 
 export class Goblin {
   constructor() {
-    this._element = document.createElement('img');
-    this._element.classList.add('goblin');
+    this._element = document.createElement("img");
+    this._element.classList.add("goblin");
     this._element.src = image;
   }
 
