@@ -1,9 +1,10 @@
+import image from '../../img/goblin.png';
+
 export class Goblin {
   constructor() {
-    this._element = document.createElement("img");
-    this._element.classList.add("goblin");
-    this._element.src =
-      "https://github.com/neondoll/ahj-homeworks-dom-moving-element/blob/main/src/img/goblin.png?raw=true";
+    this._element = document.createElement('img');
+    this._element.classList.add('goblin');
+    this._element.src = image;
   }
 
   moveToAnotherCell(cells) {
